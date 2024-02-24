@@ -1,0 +1,30 @@
+.hola {
+    
+    background: linear-gradient(to right, #faf2c5, #ebfac5, #e1f7c4); 
+}
+
+.play-button{
+    position: relative;
+    top: 600px;
+    width: 140px;
+    height: 80px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 8px #e6ddb6;
+
+    background: linear-gradient(to left, #f9ba77, #f4cf78); 
+}
+
+.list-group-item{
+    background: linear-gradient(to right, #faf2c5, #ebfac5, #e1f7c4); 
+
+}
+
+.wall{
+    height: 90px;
+  }
+
+.play-button:hover{
+    background: linear-gradient(to left, #fbd5ac, #f9f3b7);
+}
