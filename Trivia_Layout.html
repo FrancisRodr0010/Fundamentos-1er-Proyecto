@@ -27,13 +27,16 @@
 
 </head>
     <body class = "hola">
+
+        <script src="gameScript.js"></script>
+        
         <div class="container my-2">
             <h1 class = "display-2 mt-5 position-absolute top-0 start-50 translate-middle-x title">Welcome to Trivia</h1>
             <div class="card mt-5 instrucciones" id = "instructions-id">
                 <h5 class="card-header">Instrucciones</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Preguntas sobre ---</h5>
-                  <p class="card-text">A continuación se le presentaran 10 preguntas relacionadas a --------. Seleccione la respuesta correcta para cada pregunta. Cada pregunta consta de 10 puntos para un total de 100 puntos. Al terminar, se despliega cuál fue su puntaje. Buena suerte!</p>
+                  <h5 class="card-title">Preguntas sobre <span id = "category"> </span> </h5>
+                  <p class="card-text">A continuación se le presentaran 10 preguntas relacionadas a  <span id = "category"> </span> .  Seleccione la respuesta correcta para cada pregunta. Cada pregunta consta de 10 puntos para un total de 100 puntos. Al terminar, se despliega cuál fue su puntaje. Buena suerte!</p>
                 </div>
               </div>
 
@@ -57,18 +60,11 @@
         </div>
 
             <footer>
-                Francisco Andrés Rodríguez Hernández - 22001828 <br>
-                Pablo Samuel Siquinajay Castro - 2200 <br>
+               <!-- Francisco Andrés Rodríguez Hernández--> Francis???- 22001828 <br>
+                Pablo Samuel Siquinajay Castro - 22006477 <br>
             </footer>
         
-    <script>
-        function iniciarJuego(){
-            document.getElementById('startButton').style.display = 'none';
-            document.getElementById('instructions-id').style.display = 'none';
-            document.getElementById('lista-preguntas').style.display = 'block';
-            document.getElementById('Question').style.display = 'block';
-        }
-    </script>
+
 
     </body>
 
