@@ -1,7 +1,6 @@
 
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const puntaje = document.getElementById('current-score');
     const wholeScore = document.getElementById('total-score');
@@ -9,7 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let correcta = "", correctScore = askedCount = 0, total = 10;
     wholeScore.textContent = total;
     puntaje.textContent = correctScore;
+
 })
+
+//En esta funcion solo se verificara la recopilacion de datos recogidos del API
+
+
+
+let startbutton = document.querySelector("#startButton");
 
 //En esta funcion solo se verificara la recopilacion de datos recogidos del API
 async function iniciarJuego(){
@@ -17,7 +23,6 @@ async function iniciarJuego(){
     document.getElementById('instructions-id').style.display = 'none';
     document.getElementById('lista-preguntas').style.display = 'block';
     document.getElementById('Question').style.display = 'block';
-
     try{
         let res = await fetch(`https://opentdb.com/api.php?amount=10&category=27&difficulty=medium&type=multiple`);
         console.log(res);
@@ -65,3 +70,7 @@ function optionSelection(){
         })
     });
 }
+//Que hareos con la info?
+/*function useApiData(data){
+    document.querySelector('#category').innerHTML = 
+}*/
