@@ -98,3 +98,14 @@ footer{
     text-align: center;
 }
 
+#score-text{
+    font-size: 30px;
+}
+
+#current-score{
+    font-size: 30px;
+}
+
+#total-score{
+    font-size: 30px;
+}
