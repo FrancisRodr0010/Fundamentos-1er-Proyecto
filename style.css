@@ -1,6 +1,13 @@
 body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(-45deg, #fbe2b6 0%, #e0f5ac 99%, #f8c5b7 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 7s ease infinite;
     
-    background: linear-gradient(to right, #faf2c5, #ebfac5, #e1f7c4); 
+    /*background: linear-gradient(to right, #faf2c5, #ebfac5, #e1f7c4); */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -8,6 +15,23 @@ body {
 }
 
 
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+#It-is{
+    font-family: sans-serif;
+    font-size: 150%;
+    font-style: oblique;
+}
 
 .play-button{
     position: relative;
@@ -36,6 +60,8 @@ body {
     animation: fade-in 1.5s;
 
 }
+
+
 
 .instrucciones:before{
     transform: translateY(20px) scale(0.9);
@@ -96,6 +122,8 @@ footer{
     padding: 20px;
     color: white;
     text-align: center;
+    border-width: medium;
+    border-color:white;
 }
 
 #score-text{

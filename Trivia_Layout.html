@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Example</title>
+    <title>Mini-Project</title>
     
     
     <!-- Bootstrap CSS -->
@@ -19,6 +19,17 @@
         #lista-preguntas{
             display:none;
         }
+
+        #final-score{
+            display:none;
+        }
+
+        #category{
+            display:none;
+        }
+        #indicaCategoria{
+            display:none;
+        }
         
     </style>
     
@@ -27,14 +38,15 @@
     <body class = "hola">
 
         
+        <!--Container de Boostrap, junto con los botones de las opciones-->
         
         <div class="container my-2">
-            <h1 class = "display-2 mt-5 position-absolute top-0 start-50 translate-middle-x title">Welcome to Trivia</h1>
+            <h1 class = "display-2 mt-5 position-absolute top-0 start-50 translate-middle-x title">Welcome to Mini Trivia</h1>
             <div class="card mt-5 instrucciones" id = "instructions-id">
                 <h5 class="card-header">Instrucciones</h5>
                 <div class="card-body">
-                  <h5 class="card-title">Preguntas sobre <span id = "category"> </span> </h5>
-                  <p class="card-text">A continuación se le presentaran 10 preguntas relacionadas a  <span id = "category"> </span> .  Seleccione la respuesta correcta para cada pregunta. Cada pregunta consta de 10 puntos para un total de 100 puntos. Al terminar, se despliega cuál fue su puntaje. Buena suerte!</p>
+                   
+                  <p class="card-text">A continuación se le presentaran 3 preguntas relacionadas con animales. <span id = "category"> </span>Seleccione la respuesta correcta para cada pregunta. Al terminar, se despliega cuál fue su puntaje. Buena suerte!</p>
                 </div>
               </div>
 
@@ -43,9 +55,14 @@
             <div class = "wall" id = "wallid"></div>
             <div class = "wall" id = "wallid"></div>
             <!--score-->
+            <h1 id = "final-score">FINAL SCORE:</h1>
             <span id = "score-text">Score:</span>
             <span id = "current-score">43434</span> / <span id = "total-score">3</span>
+            <h5 class="card-title" id = "indicaCategoria">Preguntas sobre </h5> <h5 id = "category2"> </h5>
+            <div class = "littlewall" id = "wallid"></div>
             <h3 id = "Question"> </h3>
+            <h4 id = "It-is"> </h4>
+            <div class = "littlewall" id = "wallid"></div>
             <div class = "wall" id = "wallid"></div>
             <div class="list-group" id = "lista-preguntas">
                 <button type="button" class="list-group-item list-group-item-action btn btn-outline-danger " id = "opcion1">A second item</button>
@@ -61,8 +78,7 @@
         </div>
 
             <footer>
-               <!-- Francisco Andrés Rodríguez Hernández--> Francis???- 22001828 <br>
-                Pablo Samuel Siquinajay Castro - 22006477 <br>
+                Francisco Andrés Rodríguez Hernández - 22001828 <br>
             </footer>
         
         <script src="gameScript.js"></script>
