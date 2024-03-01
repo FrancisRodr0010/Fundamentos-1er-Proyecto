@@ -33,6 +33,7 @@ async function iniciarJuego(){
     document.getElementById('startButton').style.display = 'none';
     document.getElementById('final-score').style.display = 'none';
     document.getElementById('instructions-id').style.display = 'none';
+    document.getElementById('playagain').style.display = 'none';
     document.getElementById('lista-preguntas').style.display = 'block';
     document.getElementById('It-is').style.display = 'none';
     document.getElementById('category2').style.display = 'block';
@@ -129,7 +130,6 @@ function optionSelection(){
                 console.log("CORRECTAAAAAAAAA");
                 correctScore++;
                 console.log(correctScore);
-                //contador();
                 wholeScore.textContent = total;
                 puntaje.textContent = correctScore;
                 
@@ -147,6 +147,7 @@ function optionSelection(){
                 document.getElementById('indicaCategoria').style.display = 'none';
                 document.getElementById('final-score').style.display = 'block';
                 document.getElementById('startButton').style.display = 'block';
+                document.getElementById('playagain').style.display = 'block';
                 //console.log(correctScore);
                 finished = true;
                 wholeScore.textContent = total;
@@ -157,7 +158,7 @@ function optionSelection(){
                 setTimeout(() => {
                     iniciarJuego();
         
-                }, 700);
+                }, 800);
             }
             
             

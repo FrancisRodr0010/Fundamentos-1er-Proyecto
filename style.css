@@ -62,6 +62,11 @@ body {
 }
 
 
+#playagain{
+    position: relative;
+    left: 575px;
+    top: 450px;
+}
 
 .instrucciones:before{
     transform: translateY(20px) scale(0.9);
